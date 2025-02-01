@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Browse4Pets</title>
+  <title>My Third Assignment</title>
   <!-- DasiyUI and Tailwindcss cdn -->
   <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
   <script src="https://cdn.tailwindcss.com"></script>
@@ -17,8 +17,19 @@
     rel="stylesheet">
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="shortcut icon" href="assets/logo-header.png" type="image/x-icon">
-</head>
 
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+          }
+        }
+      }
+    }
+  </script>
+</head>
 <body>
   <!-- Header Section Start -->
   <header class="bg-[#FFF9F4]">
@@ -62,14 +73,14 @@
       <div class="max-w-7xl mx-auto px-6">
         <div class="flex flex-col md:flex-row items-start gap-12">
           <div class="md:w-1/2">
-            <h1 class="text-4xl font-bold mb-4">Pamper Your Pet, Because They Deserve the Bes</h1>
+            <h1 class="text-4xl font-bold mb-4 animate-pulse">Pamper Your Pet, Because They Deserve the Bes</h1>
             <p class="text-gray-600 mb-6">Discover a world of treats, toys, and essentials handpicked for your furry
               friends. Shop now and make tails wag with joy!</p>
             <button class="bg-[#FFDC26] text-black px-6 py-2 rounded-full font-medium hover:bg-yellow-500 animate-spin">Find a
               pet</button>
           </div>
           <div class="md:w-4/2">
-            <img src="c1-assets/cat-big.png" alt="Cute cat" class="w-full rounded-lg">
+            <img src="c1-assets/cat-big.png" alt="Cute cat" class="w-full rounded-lg animate-pulse">
           </div>
         </div>
       </div>
